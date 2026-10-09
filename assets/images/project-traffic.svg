@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c1d22"/>
+      <stop offset="1" stop-color="#2a2b31"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#sky)"/>
+  <!-- road -->
+  <polygon points="330,120 470,120 800,500 0,500" fill="#3a3b42"/>
+  <g stroke="#9a9ba3" stroke-width="5" stroke-dasharray="26 22">
+    <line x1="400" y1="125" x2="400" y2="500"/>
+    <line x1="365" y1="125" x2="210" y2="500"/>
+    <line x1="435" y1="125" x2="590" y2="500"/>
+  </g>
+  <!-- counting line -->
+  <line x1="70" y1="360" x2="730" y2="360" stroke="#ffd36e" stroke-width="5"/>
+  <text x="560" y="50" fill="#ffd36e" font-size="20" font-weight="bold">A → B: 24 · B → A: 17</text>
+  <!-- trails -->
+  <polyline points="292,330 300,290 306,255 311,225" fill="none" stroke="#4fc3f7" stroke-width="3" stroke-dasharray="6 6"/>
+  <polyline points="520,420 505,380 492,345" fill="none" stroke="#81c784" stroke-width="3" stroke-dasharray="6 6"/>
+  <!-- boxes -->
+  <g fill="none" stroke-width="4">
+    <rect x="250" y="270" width="95" height="70" stroke="#4fc3f7"/>
+    <rect x="455" y="300" width="120" height="105" stroke="#81c784"/>
+    <rect x="372" y="165" width="56" height="62" stroke="#ffb74d"/>
+    <rect x="600" y="410" width="60" height="70" stroke="#f06292"/>
+  </g>
+  <g font-size="15" font-weight="bold" fill="#111">
+    <rect x="250" y="248" width="118" height="22" fill="#4fc3f7"/>
+    <text x="255" y="264">car #12 0.91</text>
+    <rect x="455" y="278" width="118" height="22" fill="#81c784"/>
+    <text x="460" y="294">bus #7 0.88</text>
+    <rect x="372" y="143" width="124" height="22" fill="#ffb74d"/>
+    <text x="377" y="159">truck #3 0.84</text>
+    <rect x="600" y="388" width="128" height="22" fill="#f06292"/>
+    <text x="605" y="404">motor #31 0.79</text>
+  </g>
+  <text x="30" y="50" fill="#ffffff" font-size="26" font-weight="bold">YOLO11m + ByteTrack</text>
+  <text x="30" y="80" fill="#c9c9cf" font-size="17">Detection · Tracking · Line-crossing counting</text>
+</svg>

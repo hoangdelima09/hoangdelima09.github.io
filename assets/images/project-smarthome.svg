@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f2a2e"/>
+      <stop offset="1" stop-color="#17181c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <!-- house -->
+  <polygon points="90,250 260,120 430,250" fill="none" stroke="#81c784" stroke-width="8" stroke-linejoin="round"/>
+  <rect x="125" y="245" width="270" height="200" fill="none" stroke="#81c784" stroke-width="8" rx="6"/>
+  <rect x="230" y="340" width="60" height="105" fill="#81c784" rx="4"/>
+  <circle cx="278" cy="395" r="5" fill="#17181c"/>
+  <!-- face scan -->
+  <g stroke="#ffd36e" stroke-width="6" fill="none" stroke-linecap="round">
+    <path d="M500 150 v-35 h35"/><path d="M665 115 h35 v35"/>
+    <path d="M700 300 v35 h-35"/><path d="M535 335 h-35 v-35"/>
+  </g>
+  <circle cx="600" cy="200" r="42" fill="none" stroke="#e0e0e5" stroke-width="5"/>
+  <path d="M535 300 q65 -75 130 0" fill="none" stroke="#e0e0e5" stroke-width="5"/>
+  <line x1="505" y1="225" x2="695" y2="225" stroke="#ffd36e" stroke-width="3" opacity="0.8"/>
+  <!-- verified -->
+  <circle cx="600" cy="410" r="28" fill="#81c784"/>
+  <path d="M586 410 l10 10 l18 -20" stroke="#17181c" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="640" y="417" fill="#81c784" font-size="18" font-weight="bold">Verified</text>
+  <text x="30" y="50" fill="#ffffff" font-size="26" font-weight="bold">Face++ Access Control</text>
+  <text x="30" y="80" fill="#c9c9cf" font-size="17">Face recognition · IoT smart home</text>
+</svg>

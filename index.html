@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nguyễn Trần Đức Hoàng | AI Engineer – Computer Vision</title>
+  <meta name="description"
+    content="Portfolio của Nguyễn Trần Đức Hoàng – sinh viên năm cuối Khoa học Máy tính HCMUT, định hướng AI Engineer mảng Computer Vision (object detection, multi-object tracking).">
+  <meta property="og:title" content="Nguyễn Trần Đức Hoàng | AI Engineer – Computer Vision">
+  <meta property="og:description"
+    content="Object detection, multi-object tracking và triển khai mô hình thị giác máy tính.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="./assets/images/avatar.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+
+    <!-- #SIDEBAR -->
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/avatar.svg" alt="Nguyễn Trần Đức Hoàng" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Nguyễn Trần Đức Hoàng">Nguyễn Trần Đức Hoàng</h1>
+          <p class="title">AI Engineer · Computer Vision</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Liên hệ</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:hoangdelima0905@gmail.com" class="contact-link">hoangdelima0905@<wbr>gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">GitHub</p>
+              <a href="https://github.com/hoangdelima09" class="contact-link" target="_blank"
+                rel="noopener">github.com/<wbr>hoangdelima09</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Học vấn</p>
+              <p class="contact-link">Khoa học Máy tính – HCMUT</p>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Địa điểm</p>
+              <address>Thủ Đức, TP. Hồ Chí Minh</address>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://github.com/hoangdelima09" class="social-link" target="_blank" rel="noopener"
+              aria-label="GitHub">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/khmtbku2407/" class="social-link" target="_blank" rel="noopener"
+              aria-label="LinkedIn">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="mailto:hoangdelima0905@gmail.com" class="social-link" aria-label="Email">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+        <a href="./assets/cv/Nguyen-Tran-Duc-Hoang-CV.pdf" class="cv-btn" target="_blank" rel="noopener">
+          <ion-icon name="download-outline"></ion-icon>
+          <span>Tải CV (PDF)</span>
+        </a>
+
+      </div>
+
+    </aside>
+
+
+    <!-- #main-content -->
+    <div class="main-content">
+
+      <!-- #NAVBAR -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link data-target="about">Giới thiệu</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link data-target="resume">Hồ sơ</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link data-target="projects">Dự án</button>
+          </li>
+        </ul>
+      </nav>
+
+
+      <!-- #ABOUT -->
+      <article class="about active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">Giới thiệu</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Xin chào, tôi là <strong>Nguyễn Trần Đức Hoàng</strong>, sinh viên năm cuối ngành Khoa học Máy tính tại
+            Trường Đại học Bách khoa – ĐHQG TP.HCM (HCMUT). Tôi theo đuổi định hướng
+            <strong>AI Engineer trong lĩnh vực Computer Vision</strong>.
+          </p>
+          <p>
+            Tôi từng thực tập <strong>AI Engineer tại CT Group – Gascolae</strong>, làm việc với các bài toán
+            phát hiện đối tượng (object detection) và theo dõi đa đối tượng (multi-object tracking). Tôi quen làm
+            trọn quy trình của một mô hình: chuẩn bị dữ liệu, huấn luyện, đánh giá và triển khai thành ứng dụng demo.
+          </p>
+          <p>
+            Hiện tôi đang tìm kiếm vị trí <strong>AI Engineer (Computer Vision) Fresher</strong>.
+          </p>
+        </section>
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Tôi làm gì</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="scan-outline"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Object Detection</h4>
+                <p class="service-item-text">
+                  Fine-tune YOLO11 trên dữ liệu thực tế, làm sạch nhãn và đánh giá mô hình bằng mAP.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="git-network-outline"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Multi-object Tracking</h4>
+                <p class="service-item-text">
+                  Gán ID xuyên suốt các khung hình với ByteTrack/BoT-SORT, đếm đối tượng đi qua vạch.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="happy-outline"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Phân loại ảnh</h4>
+                <p class="service-item-text">
+                  Transfer learning với ResNet, xử lý mất cân bằng lớp bằng class weighting.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="rocket-outline"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Triển khai demo</h4>
+                <p class="service-item-text">
+                  Đóng gói mô hình thành ứng dụng web với Streamlit và Flask để dùng thử trực tiếp.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!-- #RESUME -->
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Hồ sơ</h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Kinh nghiệm</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">AI Engineer Intern – CT Group – Gascolae</h4>
+              <span>08/2026 — 10/2026 · TP. Hồ Chí Minh</span>
+              <p class="timeline-text">
+                Làm việc với các bài toán object detection và multi-object tracking cho ứng dụng thị giác máy tính
+                trong đội AI của công ty. Tham gia quy trình phát triển mô hình, từ chuẩn bị dữ liệu, huấn luyện
+                đến đánh giá và cải tiến.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Học vấn</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Trường Đại học Bách khoa – ĐHQG TP.HCM (HCMUT)</h4>
+              <span>Cử nhân Khoa học Máy tính · Dự kiến tốt nghiệp 2027 · GPA 3.2/4.0</span>
+              <p class="timeline-text">
+                Môn học liên quan: Machine Learning, Data Mining, Programming for AI and Data Science, Data Structures
+                and Algorithms, Database Systems.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Kỹ năng</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              <h5 class="h5 skill-group-title">Computer Vision</h5>
+              <ul class="tag-list">
+                <li>YOLO11</li><li>Ultralytics</li><li>ByteTrack</li><li>BoT-SORT</li><li>ResNet</li><li>OpenCV</li>
+              </ul>
+            </li>
+
+            <li class="skills-item">
+              <h5 class="h5 skill-group-title">Machine Learning</h5>
+              <ul class="tag-list">
+                <li>PyTorch</li><li>Scikit-learn</li><li>XGBoost</li><li>SHAP</li><li>NumPy</li><li>Pandas</li>
+                <li>Matplotlib</li>
+              </ul>
+            </li>
+
+            <li class="skills-item">
+              <h5 class="h5 skill-group-title">Lập trình &amp; Công cụ</h5>
+              <ul class="tag-list">
+                <li>Python</li><li>C++</li><li>SQL</li><li>Streamlit</li><li>Flask</li><li>REST APIs</li>
+                <li>Docker</li><li>Git</li>
+              </ul>
+            </li>
+
+            <li class="skills-item">
+              <h5 class="h5 skill-group-title">Ngoại ngữ</h5>
+              <ul class="tag-list">
+                <li>Tiếng Anh – TOEIC Listening &amp; Reading 610</li>
+              </ul>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!-- #PROJECTS -->
+      <article class="portfolio" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Dự án</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+            <li class="filter-item"><button class="active" data-filter-btn data-filter="all">Tất cả</button></li>
+            <li class="filter-item"><button data-filter-btn data-filter="cv">Computer Vision</button></li>
+            <li class="filter-item"><button data-filter-btn data-filter="ml">Machine Learning</button></li>
+            <li class="filter-item"><button data-filter-btn data-filter="iot">IoT</button></li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-select-value>Chọn danh mục</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item"><button data-select-item data-filter="all">Tất cả</button></li>
+              <li class="select-item"><button data-select-item data-filter="cv">Computer Vision</button></li>
+              <li class="select-item"><button data-select-item data-filter="ml">Machine Learning</button></li>
+              <li class="select-item"><button data-select-item data-filter="iot">IoT</button></li>
+            </ul>
+          </div>
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item active" data-filter-item data-category="cv">
+              <a href="https://github.com/hoangdelima09/smart-traffic-monitoring" target="_blank" rel="noopener">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/project-traffic.svg" alt="Smart Traffic Monitoring" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Computer Vision</p>
+                    <span class="dot"></span>
+                    <time>07/2026 – 09/2026</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Smart Traffic Monitoring</h3>
+                  <p class="blog-text">
+                    Phát hiện, theo dõi và đếm phương tiện giao thông trong video. Fine-tune YOLO11m trên BDD100K
+                    (70K ảnh huấn luyện, 1.28M bounding box), đạt mAP@50 0.58 trên tập validation; xây dựng pipeline
+                    làm sạch dữ liệu sửa 9.2K box lỗi; tích hợp ByteTrack/BoT-SORT và bộ đếm xe qua vạch theo hai
+                    chiều trong ứng dụng Streamlit.
+                  </p>
+                  <ul class="tag-list">
+                    <li>YOLO11m</li><li>ByteTrack</li><li>PyTorch</li><li>OpenCV</li><li>Streamlit</li>
+                  </ul>
+                  <span class="repo-link">Xem trên GitHub <ion-icon name="arrow-forward-outline"></ion-icon></span>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-filter-item data-category="cv">
+              <a href="https://github.com/hoangdelima09/Facial-emotion-recognition" target="_blank" rel="noopener">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/project-emotion.svg" alt="Facial Emotion Recognition" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Computer Vision</p>
+                    <span class="dot"></span>
+                    <time>09/2025 – 12/2025</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Facial Emotion Recognition</h3>
+                  <p class="blog-text">
+                    Mô hình ResNet101 nhận diện 7 cảm xúc khuôn mặt trên bộ dữ liệu RAF-DB, đạt 70.63% accuracy trên
+                    tập test nhờ class weighting xử lý mất cân bằng lớp. Triển khai thành web app Flask, dùng OpenCV
+                    để phát hiện khuôn mặt và suy luận trên ảnh.
+                  </p>
+                  <ul class="tag-list">
+                    <li>ResNet101</li><li>RAF-DB</li><li>OpenCV</li><li>Flask</li>
+                  </ul>
+                  <span class="repo-link">Xem trên GitHub <ion-icon name="arrow-forward-outline"></ion-icon></span>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-filter-item data-category="iot">
+              <a href="https://github.com/hoangdelima09/IOT_SMARTHOME" target="_blank" rel="noopener">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/project-smarthome.svg" alt="IoT Smart Home Access Control" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">IoT</p>
+                    <span class="dot"></span>
+                    <time>01/2026 – 06/2026</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">IoT Smart Home Access Control</h3>
+                  <p class="blog-text">
+                    Tích hợp Face++ API nhận diện khuôn mặt vào hệ thống nhà thông minh để kiểm soát ra vào và xác
+                    minh người dùng. Xử lý đầu vào camera và logic quyết định để kết nối kết quả nhận diện với điều
+                    khiển thiết bị; tích hợp giao tiếp IoT phục vụ giám sát thời gian thực.
+                  </p>
+                  <ul class="tag-list">
+                    <li>Face++ API</li><li>IoT</li>
+                  </ul>
+                  <span class="repo-link">Xem trên GitHub <ion-icon name="arrow-forward-outline"></ion-icon></span>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-filter-item data-category="ml">
+              <a href="https://github.com/hoangdelima09/Credit-Risk-Classification-Using-Machine-Learning"
+                target="_blank" rel="noopener">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/project-credit.svg" alt="Credit Risk Prediction" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Machine Learning</p>
+                    <span class="dot"></span>
+                    <time>03/2026 – 04/2026</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Credit Risk Prediction</h3>
+                  <p class="blog-text">
+                    Mô hình XGBoost dự đoán khả năng vỡ nợ trên hơn 600K khoản vay Lending Club, xử lý mất cân bằng
+                    lớp bằng class weighting và điều chỉnh ngưỡng, đạt ROC-AUC 0.742 (baseline Decision Tree 0.716).
+                    Giải thích mô hình bằng SHAP và triển khai dashboard Streamlit.
+                  </p>
+                  <ul class="tag-list">
+                    <li>XGBoost</li><li>SHAP</li><li>Scikit-learn</li><li>Streamlit</li>
+                  </ul>
+                  <span class="repo-link">Xem trên GitHub <ion-icon name="arrow-forward-outline"></ion-icon></span>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <footer class="site-footer">
+        © 2026 Nguyễn Trần Đức Hoàng · Giao diện dựa trên
+        <a href="https://github.com/codewithsadee/vcard-personal-portfolio" target="_blank" rel="noopener">vCard</a>
+        (MIT License)
+      </footer>
+
+    </div>
+
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
